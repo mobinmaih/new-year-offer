@@ -18,3 +18,90 @@
     font-optical-sizing: auto;
     font-style: normal;
   }
+  /* shared styles */
+  :root{
+    --p-color: #fff;
+    --s-colot: #FF0000;
+    --t-color: #070211;
+  }
+/* banner styles */
+  .banner{
+    height: 600px;
+    max-width: 1380px;
+    margin: 50px auto;
+    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)),url(../images/Banner\ Image.png);
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .banner-container{
+    padding: 345px 180px;
+}
+.banner p{
+    color: var(--p-color);
+    font-size: 32px;
+}
+.banner h2{
+    color: var(--p-color);
+    font-size: 72px;
+    letter-spacing: 5px;
+
+}
+/* discount style */
+.discount{
+  margin: auto 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.the-off{
+  font-weight: 700;
+  font-size: 88px;
+  color: var(--s-colot);
+}
+.dialog{
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--s-colot);
+}
+.cate{
+  font-weight: 700;
+  font-size: 48px;
+  color: var(--t-color);
+
+}
+/* party style */
+.party{
+  height: 600px;
+  max-width: 1380px;
+  margin: 50px auto;
+  background-image: linear-gradient(to left, rgba(0,0,0,0),rgba( 0,0,0,1)),url(../images/Vectorrr.png);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+
+}
+
+.party-container p{
+  color: var(--p-color); 
+  font-size: 28px;
+}
+
+.party-container h2{
+  color: var(--p-color);
+  font-size: 65px;
+}
+.party-container button{
+  color: var(--p-color);
+  font-weight: 700;
+  font-size: 20;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px;
+}
