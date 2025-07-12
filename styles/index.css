@@ -1,101 +1,114 @@
 /* google fonts */
 
 .merriweather> {
-    font-family: "Merriweather", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-  }
-  .megrim-regular {
-    font-family: "Megrim", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
-  .inter{
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-  }
-  /* shared styles */
-  :root{
-    --p-color: #fff;
-    --s-colot: #FF0000;
-    --t-color: #070211;
-  }
+.megrim-regular {
+  font-family: "Megrim", system-ui;
+  font-style: normal;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* shared styles */
+:root {
+  --p-color: #fff;
+  --s-color: #FF0000;
+  --t-color: #070211;
+}
+
+
 /* banner styles */
-  .banner{
-    height: 600px;
-    max-width: 1380px;
-    margin: 50px auto;
-    background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0)),url(../images/Banner\ Image.png);
-    background-size: cover;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-  }
-  .banner-container{
-    padding: 345px 180px;
+.banner {
+  margin: 50px auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../images/Banner\ Image.png);
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 1380px;
+  height: 600px;
+  border-radius: 20px;
 }
-.banner p{
-    color: var(--p-color);
-    font-size: 32px;
+
+.banner-container {
+  padding: 345px 180px;
 }
-.banner h2{
-    color: var(--p-color);
-    font-size: 72px;
-    letter-spacing: 5px;
+
+.banner p {
+  color: var(--p-color);
+  font-size: 32px;
+}
+
+.banner h2 {
+  color: var(--p-color);
+  font-size: 72px;
+  letter-spacing: 5px;
 
 }
+
 /* discount style */
-.discount{
+.discount {
   margin: auto 400px;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
-.the-off{
+
+.the-off {
   font-weight: 700;
   font-size: 88px;
-  color: var(--s-colot);
+  color: var(--s-color);
 }
-.dialog{
+
+.dialog {
   font-size: 24px;
   font-weight: 500;
-  color: var(--s-colot);
+  color: var(--s-color);
 }
-.cate{
+
+.cate {
   font-weight: 700;
   font-size: 48px;
   color: var(--t-color);
 
 }
+
 /* party style */
-.party{
-  height: 600px;
-  max-width: 1380px;
+.party {
   margin: 50px auto;
-  background-image: linear-gradient(to left, rgba(0,0,0,0),rgba( 0,0,0,1)),url(../images/Vectorrr.png);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../images/Vectorrr.png);
   background-size: cover;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px;
-
+  max-width: 1380px;
+  height: 600px;
+  border-radius: 20px;
 }
 
-.party-container p{
-  color: var(--p-color); 
+.party-container p {
+  color: var(--p-color);
   font-size: 28px;
 }
 
-.party-container h2{
+.party-container h2 {
   color: var(--p-color);
   font-size: 65px;
 }
-.party-container button{
+
+.party-container button {
   color: var(--p-color);
   font-weight: 700;
   font-size: 20;
@@ -104,4 +117,49 @@
   border-radius: 5px;
   cursor: pointer;
   padding: 10px;
+  transition: all 0.3s;
+}
+
+.party-container button:hover {
+  background: #fff;
+  color: black;
+}
+
+/* event styles */
+.event {
+  margin: 80px auto;
+  max-width: 1380px;
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.event-container{
+  margin: 380px auto;
+  align-items: center;
+  text-align: center;
+  height: 280px;
+  width: 550px;
+}
+.event-container p{
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--t-color);
+}
+.event-container p span{
+  color: var(--s-color);
+}
+.event-container button{
+  padding: 16px 32px;
+  border-radius: 10px;
+  background-color: var(--s-color);
+  font-weight: 700;
+  font-size: 20px;
+  border: 1px solid var(--p-color);
+  color: var(--p-color);
+}
+.event-container button:hover{
+  color: var(--s-color);
+  background: transparent;
+  border: 1px solid #FF0000;
 }
